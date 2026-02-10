@@ -2,14 +2,12 @@ package SupplyChainManagement.Service;
 
 import java.util.List;
 import java.util.Optional;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.GetMapping;
-
 import SupplyChainManagement.Dto.ResponseStructure;
 import SupplyChainManagement.Entity.SuppliersEntity;
 import SupplyChainManagement.Exception.idNotFoundException;
@@ -17,9 +15,6 @@ import SupplyChainManagement.Repository.SupplierRepository;
 
 @Service
 public class SupplierService {
-	
-	//@Autowired
-//	public SupplierDao supplierDao;
 	@Autowired
 	private SupplierRepository supplyRepository;
 	
@@ -119,6 +114,7 @@ public class SupplierService {
 		}
 	
 }
+
 
 
 
